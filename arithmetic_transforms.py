@@ -87,7 +87,7 @@ if (((args.video_file) and (cap.open(str(args.video_file))))
 
         # parameters for rescaling the image for easier processing
 
-        scale_percent = 50 # percent of original size
+        scale_percent = 90 # percent of original size
         width = int(bgr_frame.shape[1] * scale_percent/100)
         height = int(bgr_frame.shape[0] * scale_percent/100)
         dim = (width, height)
