@@ -129,21 +129,21 @@ if (((args.video_file) and (cap.open(str(args.video_file))))
         # =======================================================
 
         # divide the image (frame) by half
-        # half = ....
+        half = frame // 2
 
         # keep the old frame to enable the difference operation
         # a variable called 'old_frame' was defined earlier in line 67
-        # the initial value of this variable in None
-        # you can now check to see if the value in None, then we don't have an old frame yet
+        # the initial value of this variable is None
+        # you can now check to see if the value is None, then we don't have an old frame yet
         
         # calculate the absolute difference between the old frame and the current frame
         # https://docs.opencv.org/3.4/d2/de8/group__core__array.html#ga6fef31bc8c4071cbc114a758a2b79c14
 
-        # if old_frame is not None:
-        #     diff_frame = ....
-        # else:
-        #     diff_frame = ....
-        # old_frame = ....
+        if old_frame is not None:
+            diff_frame = cv2.absdiff(frame, old_frame)
+        else:
+            diff_frame = frame.copy()
+        old_frame = frame.copy()
 
         # =======================================================
         # *******************************************************

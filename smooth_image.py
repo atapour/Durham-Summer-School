@@ -3,7 +3,7 @@
 
 # Author : Amir Atapour Abarghouei, amir.atapour-abarghouei@durham.ac.uk
 
-# Copyright (c) 2022 Amir Atapour Abarghouei
+# Copyright (c) 2023 Amir Atapour Abarghouei
 
 # License : LGPL - http://www.gnu.org/licenses/lgpl.html
 # ===================================================================
